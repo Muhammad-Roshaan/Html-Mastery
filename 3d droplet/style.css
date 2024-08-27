@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.description-box {
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.droplet {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #00aaff;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: grab;
+    transition: transform 0.2s;
+}
+
+.droplet:active {
+    cursor: grabbing;
+}
+
+#droplet1 {
+    top: -20px;
+    left: 30px;
+    transform: translateZ(30px);
+}
+
+#droplet2 {
+    top: -20px;
+    right: 30px;
+    transform: translateZ(30px);
+}
+
+#droplet3 {
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%) translateZ(30px);
+}
